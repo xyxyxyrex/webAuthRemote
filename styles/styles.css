@@ -1,0 +1,157 @@
+body{
+    margin:0;
+}
+ul{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1%;
+}
+
+li{
+    justify-content: center;
+    width:10%;
+    display:inline;
+    float:right;
+    text-align: center;
+    color:#000;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform: uppercase;
+}
+
+.orderButton{
+    height:25px;
+    color:white;
+    border-radius: 50px;
+    background-color:rgba(210, 105, 30, 0.753);
+    text-decoration:none;
+
+}
+.orderButton a{
+    text-decoration:none;
+    color:white;
+
+}
+.orderButton:hover{
+    height:25px;
+    color:white;
+    border-radius: 50px;
+    background-color:chocolate;
+    text-decoration:none;
+}
+
+.navBar{
+    height:60vh;
+    margin:0;
+    background: url("../bg.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+.navButtons img{
+    width:6vw;
+}
+
+.liButtons{
+    width:2.5%;
+}
+
+.firstSection{
+    margin-top:1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height:50vh;
+}
+.carousel{
+    position:relative;
+    grid-column: 1;
+    width:100%;
+    overflow:hidden;
+}
+.carousel img{
+    position:relative;
+    grid-column: 1;
+    width:100%;
+    height:auto;
+    
+}
+
+.carouselTextWrapper{
+    padding:2.5%;
+    font-size: 10px;
+    background-color: chocolate;
+    justify-content: center;
+    text-align: justify;
+    height:100%;
+}
+.carouselTextWrapper h1 h3{
+    font-size: 10px;
+}
+
+
+.bodyTextCarousel{
+    font-size:25px;
+}
+
+.headTextCarousel{
+    font-size:25px;
+}
+
+
+
+/* Middle Text */
+
+.middleTextHeader{
+    letter-spacing:3px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.middleTextBody{
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+}
+.secondSection {
+    margin-top:1%;
+    display: flex;
+    justify-content: space-between;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+.card {
+    width: 800px;
+    height: 300px;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+}
+
+.cardImgArea {
+    height: 400px;
+    text-align: center;
+}
+
+.cardImgArea img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cardTxtArea {
+    padding: 10px;
+}
+
+.headTextCard{
+    font-size:25px;
+    font-weight:bold;
+}
