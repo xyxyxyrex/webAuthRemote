@@ -48,7 +48,7 @@
 				</a>
 				</div>
 				<li>Contact</li>
-				<li>About Us</li>
+				<li>About</li>
 				<li>Products</li>
 				<li>Home</li>
 				<img id="logoNav" src="logoLong.png">
