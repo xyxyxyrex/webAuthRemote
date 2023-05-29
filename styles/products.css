@@ -1,0 +1,304 @@
+body{
+    margin:0;
+}
+ul{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1%;
+    font-family:'Roboto',400;
+}
+
+li{
+    justify-content: center;
+    width:10%;
+    display:inline;
+    float:right;
+    height:20px;
+    text-align: center;
+    color:#000;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform: uppercase;
+    transition:1s;
+    text-decoration-color: green;
+}
+li:hover{
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: green;
+    text-decoration-thickness: 5px;
+    transition:1s;
+}
+
+.orderButton{
+    height:25px;
+    color:white;
+    border-radius: 50px;
+    background-color:rgba(210, 105, 30, 0.753);
+    text-decoration:none;
+
+}
+.orderButton a{
+    text-decoration:none;
+    color:white;
+
+}
+.orderButton:hover{
+    height:25px;
+    color:white;
+    border-radius: 50px;
+    background-color:chocolate;
+    text-decoration:none;
+}
+
+.navBar{
+    height:20vh;
+    margin:0;
+    background-size: cover; 
+    background-position: center;
+}
+
+.navButtons img{
+    width:6vw;
+}
+
+.liButtons{
+    width:2.5%;
+}
+
+.productHeader{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family:'Roboto';
+}
+
+.searchArea{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    height:80px;
+}
+
+.searchBar input{
+    height:40px;
+    width:600px;
+    border-radius: 20px;
+}
+
+.searchButton button{
+    margin-left:10%;
+    font-family:'Roboto';
+    height:40px;
+    width:40px;
+    border: transparent;
+    border-radius:40px;
+    transition:0.5s;
+    cursor:default;
+    background:none;
+}
+
+.filterSearch{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance:none;
+    width: 120px;
+    height: 50px;
+    background-color:rgba(255, 255, 255, 0.753);
+    border:1px solid rgb(240, 130, 41);
+    border-radius:30px;
+    outline:none;
+}
+input[type="checkbox"]:hover{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance:none;
+    width: 120px;
+    height: 50px;
+    border-radius:30px;
+    background-color:rgb(233, 201, 174);
+    outline:none;
+}
+input[type="checkbox"]:checked {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance:none;
+    background-color:rgb(240, 130, 41);
+    border-radius:30px;
+    outline:none;
+}
+
+label{
+    margin-top:1%;
+    margin-right:1%;
+    font-family:'Roboto';
+    font-size: 20px;
+    padding-left:2.5%;
+}
+
+.productsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    height: auto;
+    margin: 2.5% auto;
+
+  }
+.productTextArea{
+    padding:0% 5% 0% 5%;
+    font-family:'Roboto';
+    height:120px;
+}
+.productTextArea h1{
+    font-size:30px;
+    font-weight:bold;
+}
+.productTextArea h3{
+    font-size:15px;
+    font-weight:200;
+}
+
+.priceArea{
+    margin-top:20%;
+
+}
+
+.priceSpan{
+    letter-spacing:normal;
+    font-weight:bold;
+}
+.priceArea h2{
+    font-family:'Roboto';
+    font-weight:regular;
+    padding:0% 5% 0% 5%;
+    text-transform: uppercase;
+    font-size:15px;
+    letter-spacing:2px;
+    
+}
+  .productCard {
+    width: 23%;
+    height:650px;
+    margin: 1%; 
+    background-color: white;
+    
+  }
+  
+  .productCard:hover{
+    border:1px solid rgb(0, 0, 0, 0.2);
+  }
+
+  .productImgArea{
+    height:50%;
+  }
+.productCard h1{
+    height:50px;
+}
+  .productCard img{
+    height:50%;
+    width:100%;
+    object-fit:cover;
+  }
+
+  .addToCartBtn{
+    justify-content:center;
+    text-align:center;
+    width:100%;
+  }
+
+  .addToCartBtn button{
+    font-family:'Roboto';
+    font-weight:bold;
+    background-color:rgba(210, 105, 30, 0.753);
+    letter-spacing: 2px;
+    height:40px;
+    width:200px;
+    border-radius:30px;
+    border:transparent;
+    transition:0.1s;
+}
+
+.addToCartBtn button:active{
+    background-color:rgb(210, 105, 30);
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .sidebar.show {
+    right: 0;
+  }
+  
+  #sidebarToggleBtn {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(194, 121, 66);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #sidebarToggleBtn i {
+    color: #333;
+  }
+
+.sidebar h2{
+    font-size:30px;
+    padding:2.5%;
+    font-family:'Roboto';
+
+}
+
+.sidebar table{
+    width:100%;
+    font-family:'Roboto';
+    font-weight:bold;
+    text-align:center;
+}
+
+.sidebar th{
+    text-align:center;
+}
+
+input[type="number"]{
+    width:20%;
+    margin:2.5%;
+}
+
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin:0;
+}
