@@ -1,16 +1,4 @@
 
-<?php
-$productName1 = $_POST['productName1'];
-
-for ($i = 1; $i <= 7; $i++) {
-    ${"productName" . $i} = $productName1;
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $productName = $_POST['productName1'];
-    echo $productName;
-}
-?>
 <html lang="en">
 <head>
 
@@ -34,47 +22,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </head>
 <body>
-<script>
-  $(document).ready(function() {
-    $('.addToCartBtn').click(function(e) {
-      e.preventDefault();
-      var productName = $(this).data('product-name');
-      $('#product1').text(productName);
-      $('#product2').text(productName);
-      $('#product3').text(productName);
-      $('#product4').text(productName);
-      $('#product5').text(productName);
-    });
-  });
-</script>
-
         <button id="sidebarToggleBtn"><i class="fa fa-shopping-basket"></i></button>
             <div id="sidebar" class="sidebar">
-                <h2>Your Cart</h2>
-                <table>
-                <tr>
-                    <th>NAME</th>
-                    <th>QUANTITY</th>
-                    <th>PRICE</th>
-                </tr>
-                <tr>
-                <td id="product1"></td>
-                    <td><input type="number"> </td>
-                    <td></td>
-                </tr>
-                <tr>
-                <td><?php echo $productName2; ?></td>
-                    <td><input type="number"> </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="number"> </td>
-                    <td></td>
-                </tr>
-                </table>
-
             </div>
+
+
 	<div class="navBar">
 
             <script>
@@ -162,7 +114,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         });
         </script>
 
-    <form method="post" action="products.php">
     <div class="productCard food">
         <img src="assets/imgs/pic13.jpg" alt="Product">
         <div class="productTextArea">
@@ -225,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="hidden" name="quantity4">
             <input type="hidden" name="productName4" value="Soygarlic Chicken">
             <input type="hidden" name="price4" value="170">
-            <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
+        <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
     <div class="productCard drinks">
@@ -276,7 +227,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
-    </form>
 
     <script>
         $(document).ready(function() {
@@ -291,5 +241,102 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             });
         });
     </script>
+    
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create the form element
+  const form = document.createElement('form');
+  form.classList.add('productForm');
+
+  // Get all the "Add to Cart" buttons
+  const addToCartButtons = document.querySelectorAll('.addToCartBtn button[type="submit"]');
+
+  // Add click event listener to each button
+  addToCartButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      // Get the product name and price from the clicked button's data attributes
+      const productName = event.target.closest('.addToCartBtn').querySelector('[name^="productName"]').value;
+      const price = parseFloat(event.target.closest('.addToCartBtn').querySelector('[name^="price"]').value);
+
+      // Create the product container div
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('productContainer');
+
+      const productNameInput = document.createElement('input');
+      productNameInput.type = 'hidden';
+      productNameInput.name = 'productName[]';
+      productNameInput.value = productName;
+      productDiv.appendChild(productNameInput);
+
+      const priceInput = document.createElement('input');
+      priceInput.type = 'hidden';
+      priceInput.name = 'price[]';
+      priceInput.value = price;
+      productDiv.appendChild(priceInput);
+
+      // Create the product name label
+      const nameLabel = document.createElement('h1');
+      nameLabel.textContent = productName;
+      productDiv.appendChild(nameLabel);
+
+      // Create the quantity label and input
+      const quantityLabel = document.createElement('h3');
+      quantityLabel.textContent = 'Quantity: ';
+      const quantityInput = document.createElement('input');
+      quantityInput.type = 'number';
+      quantityInput.name = 'quantity[]';
+      quantityInput.addEventListener('input', updatePrice); // Add event listener to update price on input change
+      productDiv.appendChild(document.createElement('br'));
+      productDiv.appendChild(quantityLabel);
+      productDiv.appendChild(quantityInput);
+
+      // Create the price label
+      const priceLabel = document.createElement('h3');
+      priceLabel.textContent = 'Price: ₱' + price.toFixed(2);
+      priceLabel.id = 'priceLabel';
+      productDiv.appendChild(document.createElement('br'));
+      productDiv.appendChild(priceLabel);
+
+      // Create the remove button
+      const removeButton = document.createElement('button');
+      removeButton.textContent = 'X | Remove';
+      removeButton.addEventListener('click', () => {
+        productDiv.remove();
+      });
+      productDiv.appendChild(document.createElement('br'));
+      productDiv.appendChild(removeButton);
+
+      // Function to update the price based on the quantity entered
+      function updatePrice() {
+        const quantity = parseInt(quantityInput.value);
+        const totalPrice = price * quantity;
+        priceLabel.textContent = 'Price: ₱' + totalPrice.toFixed(2);
+      }
+
+      // Append the product container to the form
+      form.appendChild(productDiv);
+    });
+  });
+
+  // Create the "Place Order" button
+  const placeOrderButton = document.createElement('button');
+  placeOrderButton.textContent = 'Place Order';
+  placeOrderButton.classList.add('placeOrderButton');
+  placeOrderButton.type = 'submit';
+  placeOrderButton.addEventListener('click', () => {
+    form.action = 'orderDetails.php';
+    form.method = 'POST';
+    form.submit();
+  });
+  form.appendChild(document.createElement('br'));
+  form.appendChild(placeOrderButton);
+
+  // Append the form to the sidebar
+  const sidebarDiv = document.querySelector('#sidebar');
+  sidebarDiv.appendChild(form);
+});
+</script>
 </body>
 </html>

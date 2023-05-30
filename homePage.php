@@ -5,6 +5,7 @@
 	if(!ISSET($_SESSION['user'])){
 		header('location:index.php');
 	}
+	
 ?>
 
 <!DOCTYPE html>
@@ -63,6 +64,10 @@
 		<h4>
 			<?php echo "Welcome,  " . ucfirst($fetch['first_name'])." ".  ucfirst($fetch['last_name']) . " !"?>
 		</h4>
+		<?php 
+		$_SESSION['first_name'] = $fetch['first_name'];
+		$_SESSION['last_name'] = $fetch['last_name'];
+		?>
     </div>
 	<p class="middleTextHeader">CHOOSE YOUR BEVERAGE</p>
 		<p class="middleTextBody">Indulge in the Creamy Bliss of our Milk Tea Delights!</p>
