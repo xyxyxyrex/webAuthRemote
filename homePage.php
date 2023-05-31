@@ -11,6 +11,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Home Page</title>
+    <title>Mellow Brews</title>
 </head>
 <body>
     
@@ -43,18 +44,16 @@
 
 		<div class="navButtons">
 			<ul>
-				<li class="liButtons"><i class="fa fa-shopping-basket" aria-hidden="true" style="font-size:2rem"></i></li>
 				<li class="liButtons"><i class="fa fa-user" aria-hidden="true" style="font-size:2rem"></i></li> 
 				<li>
 				<div class="orderButton">
-				<a href="orderPage.php">
+				<a href="products.php">
 				<i class="fa fa-shopping-cart" style="font-size:1rem"></i>
 				Order
 				</a>
 				</div>
 				<li>Contact</li>
 				<li>About</li>
-				<a href="products.php"> <li>Products</li> </a>
 				<li>Home</li>
 				<img id="logoNav" src="logoLong.png">
 			</ul>

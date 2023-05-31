@@ -1,7 +1,7 @@
 
 <html lang="en">
 <head>
-
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<title>Product Page</title>
+<title>Mellow Brews</title>
 
 </head>
 <body>
@@ -42,19 +42,16 @@
 		</div>
 		<div class="navButtons">
 			<ul>
-
-            <li class="liButtons"><i class="fa fa-shopping-basket" aria-hidden="true" style="font-size:3rem"></i></li>
 				<li class="liButtons"><i class="fa fa-user" aria-hidden="true" style="font-size:3rem"></i></li> 
 				<li>
 				<div class="orderButton">
-				<a href="orderPage.php">
+				<a href="products.php">
 				<i class="fa fa-shopping-cart" style="font-size:2rem"></i>
 				Order
 				</a>
 				</div>
 				<li>Contact</li>
 				<li>About</li>
-				<li>Products</li>
 				<a href="homePage.php"><li>Home</li></a>
 				<img id="logoNav" src="logoLong.png">
 			</ul>
@@ -121,12 +118,12 @@
             <h3>Delicious, crispy, Japanese-style battered and deep-fried seafood or vegetables.</h3>
         </div>
         <div class="priceArea">
-            <h2>Price<span class="priceSpan" style="float:right;">₱170</span></h2>
+            <h2>Price<span class="priceSpan" style="float:right;">₱120</span></h2>
         </div>
         <div class="addToCartBtn">
             <input type="hidden" name="quantity1">
             <input type="hidden" name="productName1" value="Ebi Tempura">
-            <input type="hidden" name="price1" value="170">
+            <input type="hidden" name="price1" value="120">
             <button type="submit" data-product-name="Ebi Tempura"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
@@ -138,12 +135,12 @@
             <h3>Tender slices of beef cooked with a flavorful sauce, served with vegetables for a satisfying and savory meal.</h3>
         </div>
         <div class="priceArea">
-            <h2>Price<span class="priceSpan" style="float:right;">₱170</span></h2>
+            <h2>Price<span class="priceSpan" style="float:right;">₱125</span></h2>
         </div>
         <div class="addToCartBtn">
             <input type="hidden" name="quantity2">
             <input type="hidden" name="productName2" value="Beef Misono">
-            <input type="hidden" name="price2" value="170">
+            <input type="hidden" name="price2" value="125">
             <button type="submit" data-product-name="Beef Misono"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
@@ -154,12 +151,12 @@
             <h3>Spicy and succulent chicken marinated in Korean spices, delivering a fiery kick and delightful taste.</h3>
         </div>
         <div class="priceArea">
-            <h2>Price<span class="priceSpan" style="float:right;">₱170</span></h2>
+            <h2>Price<span class="priceSpan" style="float:right;">₱135</span></h2>
         </div>
         <div class="addToCartBtn">
             <input type="hidden" name="quantity3">
             <input type="hidden" name="productName3" value="Korean Chicken">
-            <input type="hidden" name="price3" value="170">
+            <input type="hidden" name="price3" value="135">
             <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
@@ -170,12 +167,12 @@
             <h3>Juicy chicken pieces marinated in a delectable blend of soy sauce and garlic, resulting in a mouthwatering combination of flavors.</h3>
         </div>
         <div class="priceArea">
-            <h2>Price<span class="priceSpan" style="float:right;">₱170</span></h2>
+            <h2>Price<span class="priceSpan" style="float:right;">₱120</span></h2>
         </div>
         <div class="addToCartBtn">
             <input type="hidden" name="quantity4">
             <input type="hidden" name="productName4" value="Soygarlic Chicken">
-            <input type="hidden" name="price4" value="170">
+            <input type="hidden" name="price4" value="120">
         <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
@@ -186,12 +183,12 @@
             <h3>A refreshing and creamy beverage combining the subtle sweetness of wintermelon with creamy milk, delivering a delightful and satisfying drink.</h3>
         </div>
         <div class="priceArea">
-            <h2>Price<span class="priceSpan" style="float:right;">₱170</span></h2>
+            <h2>Price<span class="priceSpan" style="float:right;">₱85</span></h2>
         </div>
         <div class="addToCartBtn">
             <input type="hidden" name="quantity5">
             <input type="hidden" name="productName5" value="Wintermelon Milktea">
-            <input type="hidden" name="price5" value="170">
+            <input type="hidden" name="price5" value="85">
             <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
@@ -202,12 +199,12 @@
             <h3>A creamy and luscious beverage that combines the earthy sweetness of taro with velvety milk, creating a delightful and satisfying drink.</h3>
         </div>
         <div class="priceArea">
-            <h2>Price<span class="priceSpan" style="float:right;">₱170</span></h2>
+            <h2>Price<span class="priceSpan" style="float:right;">₱80</span></h2>
         </div>
         <div class="addToCartBtn">
             <input type="hidden" name="quantity6">
             <input type="hidden" name="productName6" value="Taro Milktea">
-            <input type="hidden" name="price6" value="170">
+            <input type="hidden" name="price6" value="80">
             <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
@@ -218,12 +215,12 @@
             <h3>Embark on a flavorful journey with Okinawa Milk Tea, a delightful blend of rich black tea and brown sugar syrup, capturing the essence of Okinawa.</h3>
         </div>
         <div class="priceArea">
-            <h2>Price<span class="priceSpan" style="float:right;">₱170</span></h2>
+            <h2>Price<span class="priceSpan" style="float:right;">₱90</span></h2>
         </div>
         <div class="addToCartBtn">
             <input type="hidden" name="quantity7">
             <input type="hidden" name="productName7" value="Okinawa Milktea">
-            <input type="hidden" name="price7" value="170">
+            <input type="hidden" name="price7" value="90">
             <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>ADD TO CART</button>
         </div>
     </div>
@@ -244,23 +241,19 @@
     
     <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Create the form element
   const form = document.createElement('form');
   form.classList.add('productForm');
 
-  // Get all the "Add to Cart" buttons
   const addToCartButtons = document.querySelectorAll('.addToCartBtn button[type="submit"]');
-
-  // Add click event listener to each button
   addToCartButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
-      event.preventDefault(); // Prevent the default form submission behavior
+      event.preventDefault(); 
 
-      // Get the product name and price from the clicked button's data attributes
+   
       const productName = event.target.closest('.addToCartBtn').querySelector('[name^="productName"]').value;
       const price = parseFloat(event.target.closest('.addToCartBtn').querySelector('[name^="price"]').value);
 
-      // Create the product container div
+    
       const productDiv = document.createElement('div');
       productDiv.classList.add('productContainer');
 
@@ -276,30 +269,26 @@ document.addEventListener('DOMContentLoaded', function() {
       priceInput.value = price;
       productDiv.appendChild(priceInput);
 
-      // Create the product name label
       const nameLabel = document.createElement('h1');
       nameLabel.textContent = productName;
       productDiv.appendChild(nameLabel);
 
-      // Create the quantity label and input
       const quantityLabel = document.createElement('h3');
       quantityLabel.textContent = 'Quantity: ';
       const quantityInput = document.createElement('input');
       quantityInput.type = 'number';
       quantityInput.name = 'quantity[]';
-      quantityInput.addEventListener('input', updatePrice); // Add event listener to update price on input change
+      quantityInput.addEventListener('input', updatePrice);
       productDiv.appendChild(document.createElement('br'));
       productDiv.appendChild(quantityLabel);
       productDiv.appendChild(quantityInput);
 
-      // Create the price label
       const priceLabel = document.createElement('h3');
       priceLabel.textContent = 'Price: ₱' + price.toFixed(2);
       priceLabel.id = 'priceLabel';
       productDiv.appendChild(document.createElement('br'));
       productDiv.appendChild(priceLabel);
 
-      // Create the remove button
       const removeButton = document.createElement('button');
       removeButton.textContent = 'X | Remove';
       removeButton.addEventListener('click', () => {
@@ -308,19 +297,16 @@ document.addEventListener('DOMContentLoaded', function() {
       productDiv.appendChild(document.createElement('br'));
       productDiv.appendChild(removeButton);
 
-      // Function to update the price based on the quantity entered
       function updatePrice() {
         const quantity = parseInt(quantityInput.value);
         const totalPrice = price * quantity;
         priceLabel.textContent = 'Price: ₱' + totalPrice.toFixed(2);
       }
 
-      // Append the product container to the form
       form.appendChild(productDiv);
     });
   });
 
-  // Create the "Place Order" button
   const placeOrderButton = document.createElement('button');
   placeOrderButton.textContent = 'Place Order';
   placeOrderButton.classList.add('placeOrderButton');
@@ -333,7 +319,6 @@ document.addEventListener('DOMContentLoaded', function() {
   form.appendChild(document.createElement('br'));
   form.appendChild(placeOrderButton);
 
-  // Append the form to the sidebar
   const sidebarDiv = document.querySelector('#sidebar');
   sidebarDiv.appendChild(form);
 });

@@ -1,0 +1,209 @@
+.navButtons ul {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1%;
+    font-family: 'Roboto', 400;
+}
+
+.navButtons li {
+    justify-content: center;
+    width: 10%;
+    display: inline;
+    float: right;
+    height: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 1s;
+    text-decoration-color: green;
+}
+
+.navButtons li:hover {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: green;
+    text-decoration-thickness: 5px;
+    transition: 1s;
+}
+
+.orderButton {
+    height: 25px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgba(210, 105, 30, 0.753);
+    text-decoration: none;
+}
+
+.orderButton a {
+    text-decoration: none;
+    color: white;
+}
+
+.orderButton:hover {
+    height: 25px;
+    color: white;
+    border-radius: 50px;
+    background-color: chocolate;
+    text-decoration: none;
+}
+
+.navButtons {
+    height: 20vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.navButtons img {
+    width: 6vw;
+}
+
+.liButtons {
+    width: 2.5%;
+}
+
+.receiptWrapper {
+    font-family: 'Roboto';
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.877);
+    margin: 0 auto;
+    width: 60%;
+    box-shadow: -1px 2px 5px 6px rgba(207, 9, 9, 0.19);
+    -webkit-box-shadow: -1px 2px 5px 6px rgba(207, 9, 9, 0.19);
+}
+
+
+
+.receiptHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    color: white;
+    background-color: rgba(210, 105, 30, 0.753);
+}
+
+.headerText {
+    text-align: left;
+}
+
+.downloadButton {
+    margin-left: auto;
+}
+
+.receiptHeader button{
+    outline:none;
+    border:none;
+    background-color: transparent;
+    font-family:'Roboto';
+    font-weight:700;
+    font-size:20px;
+    margin-right:1%;
+}
+
+.receiptDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: 5%;
+    padding: 10px;
+    border-bottom:1px solid #0000002a;
+}
+
+.receiptDetails .name,
+.receiptDetails .address,
+.receiptDetails .contactnumber {
+    padding: 10px;
+}
+
+.receiptDetails h3 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.445);
+    margin: 0;
+}
+
+.receiptDetails h3,
+.receiptDetails p {
+    margin-bottom: 2%;
+}
+
+.receiptDetails p {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.orderTable {
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.orderTable table {
+    width: 70%;
+    margin-bottom:10%;
+}
+  
+  .orderTable th {
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .orderTable td {
+    padding: 10px;
+    font-size:25px;
+  }
+  
+  .orderTable tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  
+  .orderTable tr:last-child {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .orderTable tr:last-child td:last-child {
+    background-color: antiquewhite;
+  }
+
+  input[type="tel"]{
+    padding-top:6%;
+    outline:none;
+    border:0;
+    font-family:'Roboto';
+    font-size:20px;
+    color:black;
+    font-weight:700;
+  }
+
+  .iti--separate-dial-code .iti__selected-flag {
+    font-size:20px;
+    color:black;
+    font-weight:700;
+    padding-top:25%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.iti__arrow {
+    display:none;
+}

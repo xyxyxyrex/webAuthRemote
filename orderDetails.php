@@ -10,11 +10,9 @@
 ?>
 <html lang="en">
 <head>
-
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
 <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <img src="logo@4x.png" alt="">
 
       <h1>You are one step away!</h1>
-      <h2>Fill out your some information.</h2>
+      <h2>Fill out some information.</h2>
     </div>
     </div>
 
