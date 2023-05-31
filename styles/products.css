@@ -1,7 +1,7 @@
 body{
     margin:0;
 }
-ul{
+.navButtons ul{
     background-color: white;
     position: fixed;
     top: 0;
@@ -12,7 +12,7 @@ ul{
     font-family:'Roboto',400;
 }
 
-li{
+.navButtons li{
     justify-content: center;
     width:10%;
     display:inline;
@@ -26,7 +26,7 @@ li{
     transition:1s;
     text-decoration-color: green;
 }
-li:hover{
+.navButtons li:hover{
     text-decoration: underline;
     text-underline-offset: 20px;
     text-decoration-color: green;
@@ -245,11 +245,11 @@ label{
     overflow-y:auto;
   }
   .sidebar::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+    width: 10px;
   }
   
   .sidebar::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Background color of the scrollbar track */
+    background: #f1f1f1;
   }
   
   .sidebar::-webkit-scrollbar-thumb {
@@ -377,7 +377,8 @@ form{
 }
 
 .placeOrderButton {
-    font-family:'Roboto',700;
+    font-family:'Roboto';
+    font-weight:900;
     background-color: rgb(194, 121, 66);
     color: white;
     padding: 10px 20px;
@@ -392,6 +393,23 @@ form{
     letter-spacing: 2px;
     text-align: center;
     margin-left:30%;
-
-
+    transition:0.5s;
+}
+.placeOrderButton:hover{
+    font-family:'Roboto',700;
+    background-color: rgb(255, 255, 255);
+    color: rgb(194, 121, 66);
+    border: 1px solid rgb(194, 121, 66);
+    padding: 10px 20px;
+    border-radius:30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left:30%;
+    transition:0.5s;
 }

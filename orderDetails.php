@@ -84,12 +84,10 @@
 
       <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Retrieve the submitted form data
   $productNames = $_POST['productName'];
   $quantities = $_POST['quantity'];
   $prices = $_POST['price'];
 
-  // Display the order details
   echo '<h1>Order Details</h1>';
 
   if (!empty($productNames)) {
@@ -99,14 +97,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $totalAmount = 0;
 
-    // Loop through each product
     for ($i = 0; $i < count($productNames); $i++) {
       $productName = $productNames[$i];
-      $quantity = intval($quantities[$i]); // Convert to integer
-      $price = floatval($prices[$i]); // Convert to float
+      $quantity = intval($quantities[$i]); 
+      $price = floatval($prices[$i]); 
       $totalPrice = $quantity * $price;
 
-      // Display the product details in a table row
+
       echo '<tr>';
       echo '<td>' . $productName . '</td>';
       echo '<td>' . $quantity . '</td>';
@@ -131,13 +128,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <input type="submit" name="submit" value="Check Out">
 <?php
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Output hidden fields with the order details
     foreach ($productNames as $index => $productName) {
       echo '<input type="hidden" name="productName[]" value="' . $productName . '">';
       echo '<input type="hidden" name="quantity[]" value="' . $quantities[$index] . '">';
       echo '<input type="hidden" name="price[]" value="' . $prices[$index] . '">';
     }
-    // Pass other hidden fields if needed
     echo '<input type="hidden" name="totalAmount" value="' . $totalAmount . '">';
   }
   ?>
